@@ -6,6 +6,7 @@ import { TextField, Button, List, ListItem, Typography, Box } from '@mui/materia
 
 export default function TodoList() { 
 
+
   type Todo = { 
     text: string; 
     done: boolean;
@@ -21,11 +22,11 @@ export default function TodoList() {
 
   };
 
-  const toggleDone = (index: number) => { 
-    const newTodos = [...todos]; 
-    newTodos[index].done = !newTodos[index].done; 
-    setTodos(newTodos);
-  };
+  // const toggleDone = (index: number) => { 
+  //   const newTodos = [...todos]; 
+  //   newTodos[index].done = !newTodos[index].done; 
+  //   setTodos(newTodos);
+  // };
 
   const removeTodo = (index: number) => { 
     setTodos(todos.filter((_, i) => i !== index));
